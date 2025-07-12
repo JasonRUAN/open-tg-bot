@@ -13,7 +13,7 @@ if (process.env.NODE_ENV === "dev") {
   config = {
     client: {
       baseFetchConfig: {
-        agent: new SocksProxyAgent("socks://127.0.0.1:7890"),
+        agent: new SocksProxyAgent("socks://127.0.0.1:1086"),
         compress: true,
       },
     },
@@ -21,6 +21,7 @@ if (process.env.NODE_ENV === "dev") {
 }
 const token = process.env.BOT_TOKEN;
 if (!token) throw new Error("BOT_TOKEN is unset");
+console.log(">>> token", token);
 export const runtimeLocal = new Bot<MyContext>(token, config);
 // ###########################################################################
 //                        Bot Init Section End

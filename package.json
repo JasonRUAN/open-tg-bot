@@ -2,7 +2,7 @@
   "name": "ton_master_bot",
   "version": "1.0.0",
   "scripts": {
-    "run_dev": "export DEBUG='grammy*' && open https://t.me/TonBuilderBot && nodemon src/runtime.local.ts",
+    "run_dev": "export DEBUG='grammy*' && open https://t.me/TonShenzhenBot && nodemon src/runtime.local.ts",
     "wrangler_dev": "wrangler dev",
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
@@ -27,6 +27,7 @@
     "@types/debug": "^4.1.12",
     "@types/node": "^12.20.55",
     "@types/node-fetch": "2.6.2",
+    "nodemon": "^3.0.0",
     "prettier": "^3.5.3",
     "typescript": "^5.7.3",
     "vitest": "~3.0.7",
